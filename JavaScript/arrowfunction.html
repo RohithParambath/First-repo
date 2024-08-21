@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <!--
+    <input type="text" id="text">
+    <button id="rtd">Click me!</button>
+    -->
+    <!--
+    <select id="select">
+        <option>Val 1</option>
+        <option>Val 2</option>
+    </select>
+    -->
+    <h1>Fetch API Example</h1>
+    <button id="fetchData">Get Data</button>
+
+    <script>
+       /*
+       document.getElementById('rtd').addEventListener('click',()=>{
+            let val = document.getElementById("text").value;
+            console.log(val);
+        })
+        */
+        /*
+        document.getElementById('select').addEventListener('change',(e)=>{
+            //let val = document.getElementById("select").value;
+            console.log(e.target.value);
+            
+        })
+        */
+        //es6 filter
+        /*
+        var num = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20];
+        numb = num.filter((i)=>{
+            return i%2==0;
+        });
+        console.log(numb);
+        //es6 map
+        var newArray = num.map((i)=>{
+            return i*2
+        });
+        console.log(newArray);
+        
+        let afterFilter = num.filter((i)=>{return i%2==0}).map((i)=>{return i*2})
+        console.log(afterFilter);
+        
+        */
+
+        async function getApi() {
+            let res = await fetch("http://reqres.in/api/users", {"method":"POST"});
+            let data = await res.json(); // Parse the JSON from the response
+            console.log(data);    
+        }
+        document.getElementById('fetchData').addEventListener('click', () => {
+            getApi();
+        });
+    </script>
+</body>
+</html>

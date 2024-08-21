@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Tint&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: rgb(247, 239, 229);
+        }
+        .h1 {
+            font-family: "Bungee Tint";
+            color: rgb(103, 65, 136);
+            font-weight: 400;
+            margin: 0;
+        }
+        .container-class {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #333;
+        }
+        .nav-bar {
+            text-align: right;
+        }
+        .nav-items{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .nav-items li {
+            display: inline-block;
+            margin-left: 20px;
+        }
+        .nav-items a {
+            text-decoration: none;
+            color: white;
+            font-family: sans-serif;
+            font-weight: bold;
+        }
+        .underline {
+            border-bottom: 1px solid black;
+        }
+        footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 10px 0;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+    }
+    </style>
+</head>
+<body>
+    <div class="container-class">
+        <h1 class="h1">Home Page</h1>
+        <nav class="nav-bar">
+            <ul class="nav-items">
+                <li><a href="#">Home</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+                <li><a href="./gallery.html">Gallery</a></li>
+                <li><a href="./login.html">Login</a></li>
+                <li><a href="./register.html">Register</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="underline"></div>
+    <div class="body">
+        <h1 class="h1-1">Welcome to Our Website</h1>
+        <p>This is the main landing page. Navigate using the links above.</p>
+    </div>
+    <footer>
+        <p>2024 Website</p>
+    </footer>
+    
+</body>
+</html>
